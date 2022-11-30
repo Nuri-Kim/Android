@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">어플리케이션</string>
+
+    <string name="intro"> 이곳은 첫번째 페이지입니다. </string>
+
+    <string-array name="colors">
+        <item>Purple</item>
+        <item>Yellow</item>
+        <item>Fuchsia</item>
+    </string-array>
+
+
+</resources>
