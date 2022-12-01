@@ -5,26 +5,27 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
+    <ImageButton
         android:id="@+id/imgPoke"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
         android:layout_marginBottom="20dp"
+        android:background="#00000000"
+        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/p4" />
+        app:layout_constraintVertical_bias="0.275" />
 
     <TextView
         android:id="@+id/tvPokeLevel"
         android:layout_width="wrap_content"
         android:layout_height="30dp"
-        android:layout_marginStart="20dp"
+        android:layout_marginStart="8dp"
         android:gravity="center_vertical"
         android:text="Lv : 1"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintStart_toEndOf="@+id/imgPoke"
         app:layout_constraintTop_toTopOf="@+id/imgPoke" />
 
@@ -32,9 +33,13 @@
         android:id="@+id/tvPokeName"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
         android:gravity="center_vertical"
         android:text="이상해씨"
-        android:textSize="24sp"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/tvPokeLevel"
         app:layout_constraintTop_toBottomOf="@+id/tvPokeLevel" />
 
@@ -44,8 +49,24 @@
         android:layout_height="30dp"
         android:gravity="center_vertical"
         android:text="풀"
-        android:textSize="18sp"
+        android:textSize="12sp"
         app:layout_constraintBottom_toBottomOf="@+id/imgPoke"
         app:layout_constraintStart_toStartOf="@+id/tvPokeName"
         app:layout_constraintTop_toBottomOf="@+id/tvPokeName" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <Button
+        android:id="@+id/btnRemove"
+        android:layout_width="158dp"
+        android:layout_height="41dp"
+        android:text="놓아주기"
+        app:layout_constraintStart_toStartOf="@+id/imgPoke"
+        app:layout_constraintTop_toBottomOf="@+id/imgPoke" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
