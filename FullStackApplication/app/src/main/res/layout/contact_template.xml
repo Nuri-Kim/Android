@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgContact"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_profile" />
+
+    <TextView
+        android:id="@+id/tvContactName"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="monospace"
+        android:text="김누리"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imgContact"
+        app:layout_constraintTop_toTopOf="@+id/imgContact" />
+
+    <TextView
+        android:id="@+id/tvContactAge"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:text="29세"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContactName"
+        app:layout_constraintEnd_toEndOf="@+id/tvContactTel"
+        app:layout_constraintStart_toEndOf="@+id/tvContactName"
+        app:layout_constraintTop_toTopOf="@+id/tvContactName" />
+
+    <TextView
+        android:id="@+id/tvContactTel"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="monospace"
+        android:text="010-1234-5678"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgContact"
+        app:layout_constraintStart_toStartOf="@+id/tvContactName"
+        app:layout_constraintTop_toBottomOf="@+id/tvContactName" />
+
+    <Button
+        android:id="@+id/btnContactCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_radius_yellow"
+        android:fontFamily="monospace"
+        android:text="전화걸기"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tvContactTel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvContactTel"
+        app:layout_constraintTop_toTopOf="@+id/tvContactName" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="#bdbdbd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgContact" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

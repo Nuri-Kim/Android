@@ -13,7 +13,8 @@ import android.widget.TextView
 
 class PhoneAdapter(val context: Context,
                    val layOut:Int,
-                   val data : ArrayList<PhoneVO> ) : BaseAdapter() {
+                   val data : ArrayList<PhoneVO> )
+    : BaseAdapter() {
 
     // Activity 의 힘을 빌려 Inflate 를 할 수 있는 inflater 가져오기
 

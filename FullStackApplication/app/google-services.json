@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "993366013582",
+    "project_id": "full-stack-f999e",
+    "storage_bucket": "full-stack-f999e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:993366013582:android:42ffa067d88a2dbe2c7bdf",
+        "android_client_info": {
+          "package_name": "com.example.fullstackapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "993366013582-a6qfat9tgb0lv4gso19902rdr81cq22j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDP9gdhdR1BXn5rdCXcb7C4uvFi0uipQEo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "993366013582-a6qfat9tgb0lv4gso19902rdr81cq22j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
